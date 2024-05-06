@@ -6,16 +6,16 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.artistapplication.repository.ArtistRepository
-import com.example.artistapplication.model.CharacterResponseModel
+import com.example.artistapplication.model.ResultModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ArtistViewModel @Inject constructor(private val artistRepository: ArtistRepository) : ViewModel(){
+class ArtistViewModel @Inject constructor(private val artistRepository : ArtistRepository) : ViewModel(){
 
-    val artistLivedata = MutableLiveData<CharacterResponseModel>()
+    val artistLivedata = MutableLiveData<ResultModel>()
     val errorLiveData = MutableLiveData<String>()
 
 

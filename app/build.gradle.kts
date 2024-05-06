@@ -65,5 +65,5 @@ dependencies {
     // Coroutines
     implementation (libs.gson.v289)
     implementation (libs.kotlinx.coroutines.android)
-    implementation (libs.kotlinx.coroutines.core)
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
 }
